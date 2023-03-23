@@ -16,4 +16,5 @@ services:
     container_name: iim_frontend
     hostname: iim_frontend
     build: ./frontend
-    
+    ports:
+      - '4000:4000'

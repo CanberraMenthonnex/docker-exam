@@ -2,7 +2,7 @@
 
 FROM node
 
-WORKDIR /app
+WORKDIR /backend
 COPY . .
 RUN npm install
 ENV PORT=4001
