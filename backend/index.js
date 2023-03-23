@@ -32,9 +32,10 @@ app.post("/todos", async (req, res) => {
 
 app.delete("/todos/:todoId", async (req, res) => {
   const todoId = req.params.todoId;
-  const todo = await db("todos").where("id", todoId).delete();
+  const todo = await db("todos").where("id", todoId).del();
+  res.sendStatus(204);
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`);
+// });
