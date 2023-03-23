@@ -1,7 +1,7 @@
 module.exports = {
-  HOST: "TO_MODIFY",
+  HOST: "4001",
   USER: "TO_MODIFY",
   PASSWORD: "TO_MODIFY",
   DATABASE: "TO_MODIFY",
-  PORT: "TO_MODIFY",
+  PORT: "4001",
 };

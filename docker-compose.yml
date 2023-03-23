@@ -1,1 +1,10 @@
 #TO_MODIFY
+services:
+  backend:
+    container_name: test_backend
+    hostname: test_backend
+    build: ./backend
+    ports: 
+      - '4001:4001'
+    
+
