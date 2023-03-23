@@ -12,3 +12,8 @@ services:
     image: mysql:8.0
     ports:
       - '3307:3306'
+  frontend:
+    container_name: iim_frontend
+    hostname: iim_frontend
+    build: ./frontend
+    
