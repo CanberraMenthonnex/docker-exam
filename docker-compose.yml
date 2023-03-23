@@ -1,10 +1,14 @@
 #TO_MODIFY
 services:
   backend:
-    container_name: test_backend
-    hostname: test_backend
+    container_name: iim_backend
+    hostname: iim_backend
     build: ./backend
     ports: 
       - '4001:4001'
-    
-
+  mysql:
+    container_name: iim_mysql
+    hostname: iim_mysql
+    image: mysql:8.0
+    ports:
+      - '3307:3306'

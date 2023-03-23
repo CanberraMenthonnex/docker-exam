@@ -1,7 +1,7 @@
 module.exports = {
-  HOST: "4001",
-  USER: "TO_MODIFY",
-  PASSWORD: "TO_MODIFY",
-  DATABASE: "TO_MODIFY",
-  PORT: "4001",
+  HOST: "3307",
+  USER: "root",
+  PASSWORD: "root",
+  DATABASE: "iim_db",
+  PORT: "3306",
 };

@@ -20,16 +20,15 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/todos", async (req, res) => {
-  //TO_MODIFY
-  res.send([]); // to remove after question 1)
+  res.send("Request GET");
 });
 
 app.post("/todos", async (req, res) => {
-  //TO_MODIFY
+  res.send("Request POST");
 });
 
 app.delete("/todos/:todoId", async (req, res) => {
-  //TO_MODIFY
+  res.send("Request DELETE");
 });
 
 app.listen(port, () => {
