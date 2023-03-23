@@ -20,15 +20,19 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/todos", async (req, res) => {
-  res.send("Request GET");
+  const todos = await db("todos").select("*");
+  res.json(todos);
 });
 
 app.post("/todos", async (req, res) => {
-  res.send("Request POST");
+  const { name, description } = req.body;
+  const todo = await db("todos").insert({ name, description });
+  res.json({ id: todo[0], name: name, description: description });
 });
 
 app.delete("/todos/:todoId", async (req, res) => {
-  res.send("Request DELETE");
+  const todoId = req.params.todoId;
+  const todo = await db("todos").where("id", todoId).delete();
 });
 
 app.listen(port, () => {

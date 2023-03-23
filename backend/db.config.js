@@ -1,7 +1,7 @@
 module.exports = {
-  HOST: "3307",
+  HOST: "iim_mysql",
   USER: "root",
   PASSWORD: "root",
-  DATABASE: "iim_db",
+  DATABASE: "mydatabase",
   PORT: "3306",
 };
